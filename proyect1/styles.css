@@ -1,0 +1,42 @@
+body {
+    background: #007bff; 
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.navbar-brand img {
+    filter: invert(100%);
+}
+
+.card-img{
+    position:relative;
+}
+.claseimg img{
+   max-width:200px;
+   height:auto;
+   position:absolute;
+   top:50%;
+   left:5%;
+   overflow:hidden ;
+}
+
+#main-footer {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .claseimg img{
+        max-width: 20%;
+        height: auto;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .claseimg img{
+        max-width: 25%;
+        height: auto;
+    }
+}
