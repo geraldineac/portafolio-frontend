@@ -1,19 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+photo {
+  max-width: 100%;
+  height: auto; 
+  
+  border-radius: 50%;
+}
+
+#edit{
+  float: right;
+}
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
+    
 
     svg#rocket-smoke {
       right: 120px;

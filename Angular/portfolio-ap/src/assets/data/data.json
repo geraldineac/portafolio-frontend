@@ -1,0 +1,82 @@
+{
+
+  "nombre":"Geraldine",
+  "apellido":"Acevedo",
+  "perfil":"Developer FullStack Jr.",
+  "sobre":"Me considero una persona autodidacta",
+  "image":"./assets/images/perfil.jpg",
+  "backImage":"./assets/images/banner.png",
+
+"experiencia":[
+{
+  "puesto":"Agente en terreno",
+  "empresa":"RocketPin",
+  "descripcion":"Capacitación inicial de parte de la empresa, bajo la supervición de un Agente con más experiencia, me asignaron tareas como capacitar a los comerciantes sobre Mercado Pago, la utilización de código QR, las formas de cobro más seguras con la app, etc",
+  "desde":"Junio 2020",
+  "hasta":"Agosto 2020"
+},
+{
+  "puesto":"Voluntariado",
+  "empresa":"Institución Religiosa",
+  "descripcion":"Limpieza de la sala, atención y cuidado de niños durante las reuniones",
+  "desde":"Febrero 2010",
+  "hasta":"Octubre 2013"
+}
+],
+
+"educacion":[
+{
+  "school":"Argentina Programa",
+  "curso":"#YoProgramo 3ra Edición",
+  "texto":"En la plataforma del INTI, obtuve certificado del curso para perfilarme como desarrolladora Full Stack",
+  "desde":"Junio 2022",
+  "hasta":"Enero 2023"
+},
+{
+  "school":"Argentina Programa",
+  "curso":"#SeProgramar",
+  "texto":"En la plataforma de Mumuki, obtuve certificado del curso de introducción a la programación",
+  "desde":"Febrero 2022",
+  "hasta":"Abril 2022"
+},
+{
+  "school":"Escuela Secundaria n°9 Maria Claudia Falcone",
+  "curso":"Bachiller en Ciencias Naturales",
+  "texto":"Analítico de título secundario en mano, promedio: 7,91",
+  "desde":2010,
+  "hasta":2013
+}
+],
+
+"Skills":[
+{
+  "skill":"Angular",
+  "porcentaje": 40
+},
+{
+  "skill":"MySQL",
+  "porcentaje":50
+},
+{
+  "skill":"JAVA",
+  "porcentaje":20
+},
+{
+  "skill":"Spring Boot",
+  "porcentaje": 25
+}
+],
+
+"Projects":[
+  {
+    "proyecto":"Proyecto Final Mi Portfolio Web",
+  "explicacion":"SPA realizada en Angular, utilizando MySQL para las bases de datos y API REST con Spring Boot"
+  },
+  {
+    "proyecto":"Calculadora",
+    "explicacion":"una app de calculadora"
+  }
+]
+
+
+}

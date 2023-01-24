@@ -13,6 +13,10 @@ import { EducationeditComponent } from './modales/educationedit/educationedit.co
 import { HeadereditComponent } from './modales/headeredit/headeredit.component';
 import { JobseditComponent } from './modales/jobsedit/jobsedit.component';
 import { SkillseditComponent } from './modales/skillsedit/skillsedit.component';
+import { Error404Component } from './error404/error404.component';
+import { HomeComponent } from './home/home.component';
+import { ProjectseditComponent } from './modales/projectsedit/projectsedit.component';
+import { ProjectsComponent } from './componentes/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { SkillseditComponent } from './modales/skillsedit/skillsedit.component';
     EducationeditComponent,
     HeadereditComponent,
     JobseditComponent,
-    SkillseditComponent
+    SkillseditComponent,
+    Error404Component,
+    HomeComponent,
+    ProjectseditComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
