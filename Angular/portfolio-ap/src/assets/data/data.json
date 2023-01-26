@@ -4,8 +4,8 @@
   "apellido":"Acevedo",
   "perfil":"Developer FullStack Jr.",
   "sobre":"Me considero una persona autodidacta",
-  "image":"./assets/images/perfil.jpg",
-  "backImage":"./assets/images/banner.png",
+  "photo":"./assets/images/photo.png",
+  "banner":"./assets/images/banner.png",
 
 "experiencia":[
 {
@@ -50,20 +50,28 @@
 
 "Skills":[
 {
-  "skill":"Angular",
-  "porcentaje": 40
+  "skill":"HTML",
+  "porcentaje": 75
 },
 {
-  "skill":"MySQL",
-  "porcentaje":50
+  "skill":"CSS",
+  "porcentaje": 45
 },
 {
-  "skill":"JAVA",
-  "porcentaje":20
+  "skill":"Bootstrap",
+  "porcentaje": 50
+},
+{
+    "skill":"JavaScript",
+    "porcentaje": 25
+},
+{
+    "skill":"Angular",
+    "porcentaje": 20
 },
 {
   "skill":"Spring Boot",
-  "porcentaje": 25
+  "porcentaje": 15
 }
 ],
 
