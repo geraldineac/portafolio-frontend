@@ -17,6 +17,7 @@ import { Error404Component } from './error404/error404.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectseditComponent } from './modales/projectsedit/projectsedit.component';
 import { ProjectsComponent } from './componentes/projects/projects.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProjectsComponent } from './componentes/projects/projects.component';
     Error404Component,
     HomeComponent,
     ProjectseditComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
