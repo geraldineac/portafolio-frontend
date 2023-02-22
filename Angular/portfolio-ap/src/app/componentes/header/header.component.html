@@ -30,8 +30,15 @@
         
       </ul>
       <form class="d-flex" role="signin">
-        <div>
-      
+        <div *ngIf="!hasRoute('dashboard')">
+          <a routerLink="/login" class="btn btn-secondary">
+            <small class="fas fa-user"> </small>
+          </a>
+        </div>
+        <div *ngIf="hasRoute('dashboard')">
+          <button class="btn btn-secondary" (click)="onClick();">
+            <small class="fas fa-user-slash"> </small>
+          </button>
         </div>
       </form>
       
@@ -40,10 +47,11 @@
 </header>
 
 
+
 <div class="card text-center" id="banner">
   
 	<img class="card-img" src="./assets/images/banner.png" style="filter: brightness(50%);">
-  <app-headeredit></app-headeredit>
+  <app-headeredit *ngIf="hasRoute('dashboard')"></app-headeredit>
 	<div class="card-img-overlay d-flex">
     <a href="#sobre_mi" class="align-self-center mx-auto text-decoration-none link-light">
 		<h1 class="card-title display-5 fw-bold">Mi Portfolio</h1>

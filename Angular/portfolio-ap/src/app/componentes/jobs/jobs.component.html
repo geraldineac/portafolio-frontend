@@ -2,7 +2,7 @@
     <div class="card-body">
         <h5 class="card-title">Mis Habilidades</h5>
         <br />
-            <app-jobsedit></app-jobsedit>
+            <app-jobsedit *ngIf="hasRoute('dashboard')"></app-jobsedit>
 
         
         <div class="list-group">

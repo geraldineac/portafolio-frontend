@@ -13,7 +13,7 @@
 
         <div class="col-sm-8 mt-3">
             <div class="card mb-2 w-auto m-2 p-2">
-                <app-aboutedit></app-aboutedit>
+                <app-aboutedit *ngIf="hasRoute('dashboard')"></app-aboutedit>
                 <div class="card-body">
 
                     <h5 class="card-title">Sobre mi</h5>

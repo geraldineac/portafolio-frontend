@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,11 @@ import { HomeComponent } from './home/home.component';
 import { ProjectseditComponent } from './modales/projectsedit/projectsedit.component';
 import { ProjectsComponent } from './componentes/projects/projects.component';
 import { LoginComponent } from './login/login.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -36,11 +42,16 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     ProjectseditComponent,
     ProjectsComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ModalModule.forRoot(),
+    AppRoutingModule,
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
   ],
   providers: [],
   bootstrap: [AppComponent]

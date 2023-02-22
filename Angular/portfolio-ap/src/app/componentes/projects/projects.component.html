@@ -4,7 +4,7 @@
     <div class="card-body">
         <h5 class="card-title">Mis Habilidades</h5>
         <br />
-            <app-projectsedit></app-projectsedit>
+            <app-projectsedit *ngIf="hasRoute('dashboard')"></app-projectsedit>
 
         
         <div class="list-group">

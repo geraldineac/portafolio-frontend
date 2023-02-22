@@ -6,7 +6,7 @@ photo {
   border-radius: 50%;
 }
 
-#edit{
+.fa fa-pencil{
   float: right;
 }
 /* Responsive Styles */

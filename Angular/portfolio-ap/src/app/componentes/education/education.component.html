@@ -2,7 +2,7 @@
     <div class="card-body">
         <h5 class="card-title">Mis Habilidades</h5>
         <br />
-            <app-educationedit></app-educationedit>
+            <app-educationedit *ngIf="hasRoute('dashboard')"></app-educationedit>
 
         
         <div class="list-group">
