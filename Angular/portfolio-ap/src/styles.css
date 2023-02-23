@@ -13,15 +13,15 @@ photo {
 @media screen and (max-width: 767px) {
     
 
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
+    photo {
+      width: 1 rem;
+      height: auto;
     }
   }
 
   @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
+    photo {
+      width: 0.5 rem;
+      height: auto;
     }
   }
