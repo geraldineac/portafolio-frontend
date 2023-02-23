@@ -8,9 +8,15 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal'
 })
 export class HeadereditComponent implements OnInit {
 
-  constructor() { }
+  modalRef?: BsModalRef;
+  constructor(private modalService: BsModalService) { }
 
   ngOnInit(): void {
   }
+
+  openModal(template: TemplateRef<any>){
+    this.modalRef = this.modalService.show(template);
+  }
+
 
 }
