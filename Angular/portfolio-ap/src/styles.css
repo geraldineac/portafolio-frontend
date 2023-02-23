@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-photo {
+#photo {
   max-width: 100%;
+  width:200px;
   height: auto; 
   
-  border-radius: 50%;
 }
 
 .fa fa-pencil{
@@ -13,14 +13,14 @@ photo {
 @media screen and (max-width: 767px) {
     
 
-    photo {
+    #photo {
       width: 1 rem;
       height: auto;
     }
   }
 
   @media screen and (max-width: 575px) {
-    photo {
+    #photo {
       width: 0.5 rem;
       height: auto;
     }
