@@ -19,6 +19,6 @@ export class DashboardComponent implements OnInit {
     .then(() =>{
       this.router.navigate(['/home']);
     })
-    .catch(error=> console.log(error));
+    .catch(error => console.log(error));
   }
 }
