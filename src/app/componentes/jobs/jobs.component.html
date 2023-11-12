@@ -1,20 +1,22 @@
 <div class="card mt-2 w-auto m-2 p-2">
-    <div class="card-body">
-        <h5 class="card-title">Experiencia Laboral</h5>
-        <br />
-            <app-jobsedit *ngIf="hasRoute('dashboard')"></app-jobsedit>
+  <div class="card-body">
+    <h5 class="card-title">Experiencia Laboral</h5>
+    <br />
+    <app-jobsedit *ngIf="hasRoute('dashboard')"></app-jobsedit>
 
-        
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small>3 days ago</small>
-                </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-              <small>And some small print.</small>
-            </a>
+    <div class="list-group">
+      <a
+        href="#"
+        class="list-group-item list-group-item-action"
+        aria-current="true"
+      >
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">List group item heading</h5>
+          <small>3 days ago</small>
         </div>
+        <p class="mb-1">Some placeholder content in a paragraph.</p>
+        <small>And some small print.</small>
+      </a>
     </div>
-    
+  </div>
 </div>

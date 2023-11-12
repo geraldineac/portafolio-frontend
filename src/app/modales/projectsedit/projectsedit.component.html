@@ -1,13 +1,23 @@
-<button type="button" class="fa fa-pencil btn btn-secundary" aria-hidden="true" (click)="openModal(template)"></button>
+<button
+  type="button"
+  class="btn btn-secundary"
+  aria-hidden="true"
+  (click)="openModal(template)"
+>
+  <i class="fa fa-pen"></i>
+</button>
 
 <ng-template #template>
-    <div class="modal-header">
-      <h4 class="modal-title pull-left">Modal</h4>
-      <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
-        <span aria-hidden="true" class="visually-hidden">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      This is a modal.
-    </div>
-  </ng-template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button
+      type="button"
+      class="btn-close close pull-right"
+      aria-label="Close"
+      (click)="modalRef?.hide()"
+    >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">This is a modal.</div>
+</ng-template>
