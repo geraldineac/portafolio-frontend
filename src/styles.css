@@ -1,9 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Baloo 2';
+  src: url('./assets/fonts/Baloo2-Regular.ttf') format('truetype');
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Baloo 2', sans-serif !important; /* sin el !important, se muestran las fuentes de Bootstrap */
+  }
+
 #photo {
   max-width: 100%;
   width:200px;
-  height: auto; 
-  
+  height: auto;
+
 }
 
 .fa fa-pencil{
@@ -11,7 +31,7 @@
 }
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
-    
+
 
     #photo {
       width: 1 rem;
@@ -19,7 +39,7 @@
     }
   }
 
-  @media screen and (max-width: 575px) {
+@media screen and (max-width: 575px) {
     #photo {
       width: 0.5 rem;
       height: auto;
