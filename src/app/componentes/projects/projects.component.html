@@ -1,24 +1,50 @@
-<h4></h4>
-
-<div class="card mt-2 w-auto m-2 p-2">
-  <div class="card-body">
-    <h5 class="card-title">Mis Proyectos</h5>
-    <br />
-    <app-projectsedit *ngIf="hasRoute('dashboard')"></app-projectsedit>
-
-    <div class="list-group">
-      <a
-        href="#"
-        class="list-group-item list-group-item-action"
-        aria-current="true"
-      >
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">List group item heading</h5>
-          <small>3 days ago</small>
-        </div>
-        <p class="mb-1">Some placeholder content in a paragraph.</p>
-        <small>And some small print.</small>
-      </a>
+<section id="proyectos">
+  <div class="container">
+  <h2>Proyectos Destacados</h2>
+  <div class="row">
+    <div class="col">
+    <div class="card proyecto p-3">
+      <img class="card-img-top" src="https://i.ibb.co/xz0FSrz/Captura-web-21-12-2023-211424-foodielist-netlify-app.jpg" alt="Proyecto 1">
+      <h3 class="card-title">FoodieList</h3>
+      <p class="card-text">Una aplicación para compartir listas de compras a partir de recetas. Proyecto colaborativo realizado con Angular y Spring Boot para No Country. Diseño responsive utilizando SASS.</p>
+      <a href="https://foodielist.netlify.app/" target="_blank" class="btn btn-dark">Ver Proyecto</a>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card proyecto p-3">
+      <img class="card-img-top" src="https://i.ibb.co/GVypw3K/image.png" alt="Proyecto 2">
+      <h3 class="card-title">Task GPT</h3>
+      <p class="card-text">Web-app para gestión de tareas realizada con Angular y Firebase para No Country. Deploy con Vercel.</p>
+      <a href="https://c14-29-n-java-angular-6czz.vercel.app" target="_blank" class="btn btn-dark">Ver Proyecto</a>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card proyecto p-3">
+      <img class="card-img-top" src="https://i.ibb.co/MpCmh34/Captura-de-pantalla-20-2-2024-35624-geraldineac-github-io.jpg" alt="Proyecto 3">
+      <h3 class="card-title">CV Random</h3>
+      <p class="card-text">Proyecto final de CV para Argentina Programa, construida con Bootstrap y utilizando fetch con la API de RandomUser, deployada en Github Pages.</p>
+      <a href="https://geraldineac.github.io/final-ticmas" target="_blank" class="btn btn-dark">Ver Proyecto</a>
+    </div>
+    </div>
     </div>
   </div>
-</div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme a través del siguiente formulario o mediante mis redes sociales:</p>
+    <form>
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Correo Electrónico">
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit" class="btn btn-dark">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Portfolio de Geraldine Acevedo. Todos los derechos reservados.</p>
+  </div>
+</footer>

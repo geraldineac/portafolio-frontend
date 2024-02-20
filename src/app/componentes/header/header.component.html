@@ -1,101 +1,28 @@
-<!--NAV BAR-->
-<!-- <header
-  class="navbar navbar-expand-lg navbar-black bd-navbar sticky-top"
-  style="background-color: lightsteelblue"
->
-  <nav
-    class="container-xxl bd-gutter flex-wrap flex-lg-nowrap"
-    aria-label="Main navigation"
-  >
-    <a class="navbar-brand" href="https://argentina.gob.ar/argentina-programa">
-      <img
-        src="./assets/images/logo-ap.png"
-        alt="Logo de Argentina Programa"
-        width="auto"
-        height="60"
-        style="filter: invert(100)"
-        class="d-inline-block align-text-top"
-      />
-    </a>
+<header class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <h1 class="navbar-brand">Nombre de la Desarrolladora</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-        <li class="nav-item col-6 col-lg-auto">
-          <a
-            class="nav-link py-2 px-0 px-lg-2"
-            href="https://linkedin.com/"
-            target="_blank"
-          >
-            <small class="fab fa-linkedin fa-2x"> </small>
-          </a>
-        </li>
-        <li class="nav-item col-6 col-lg-auto">
-          <a
-            class="nav-link py-2 px-0 px-lg-2"
-            href="https://github.com/geraldineac"
-            target="_blank"
-          >
-            <small class="fab fa-github fa-2x"> </small>
-          </a>
-        </li>
-        <li class="nav-item py-1 col-12 col-lg-auto">
-          <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-dark"></div>
-        </li>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
-      <form class="d-flex" role="signin">
-        <div *ngIf="!hasRoute('dashboard')">
-          <a routerLink="/login" class="btn btn-secondary">
-            <small class="fas fa-user"> </small>
-          </a>
-        </div>
-        <div *ngIf="hasRoute('dashboard')">
-          <button class="btn btn-secondary" (click)="onClick()">
-            <small class="fas fa-user-slash"> </small>
-          </button>
-        </div>
-      </form>
-    </div>
-  </nav>
-</header> -->
 
-<nav class="navbar navbar-expand-lg navbar-black bd-navbar sticky-top">
-  <div class="navbar-brand">
-    <img src="./assets/favicon/apple-touch-icon.png"alt="Logo de Argentina Programa"
-    width="auto"
-    height="80"
-    class="d-inline-block align-text-top">
   </div>
-  <div class="menu">
-    <a href="#sobre_mi">Sobre mí...</a>
-    <a href="#works">Experiencia</a>
-    <button class="boton" routerLink="/login" *ngIf="!hasRoute('dashboard')">
-      <small class="fas fa-user"> </small>
-    </button>
-    <button class="boton" (click)="onClick()" *ngIf="hasRoute('dashboard')">
-      <small class="fas fa-user-slash"> </small>
-    </button>
-  </div>
-</nav>
+      </div>
 
-<div class="card text-center" id="banner" style="background-color: blueviolet;">
-<div class="glass">
+</header>
 
   <app-about></app-about>
-</div>
+
 
   <app-headeredit *ngIf="hasRoute('dashboard')"></app-headeredit>
 
-</div>
+
 
 

@@ -1,0 +1,65 @@
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Estilos para los proyectos */
+.proyecto {
+  margin-bottom: 40px;
+}
+
+.proyecto img {
+  max-width: 100%;
+}
+
+.proyecto h3 {
+  margin-top: 10px;
+}
+
+.proyecto p {
+  margin-bottom: 10px;
+}
+
+.proyecto a {
+  /*display: inline-block;*/
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.proyecto a:hover {
+  background-color: #555;
+}
+
+/* Estilos para el formulario de contacto */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
